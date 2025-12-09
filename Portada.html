@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Bienvenida - Rinos en Movimiento</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+    body {
+        color: white;
+    }
+    .bg-img {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /*Hace que la imagen llene todo el espacio de la pantalla*/
+        z-index: -1; /*Manda la imagen al fondo*/
+    }
+    .tarjeta {
+        border-radius: 15px;
+        border: 2px solid rgb(184, 197, 187);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px); /*Esta linea sirve que las 
+        tarjetas tengan un efecto de borrosidad en su background*/
+    }
+    .btn-login {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
+        border: 2px solid rgb(184, 197, 187);
+        border-radius: 15px;
+        color: white;
+        padding: 6px 25px;
+    }
+    .btn-login:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+</style>
+</head>
+<body>
+<img class="bg-img" src="conducir.jpg" alt="Fondo">
+<div class="py-3" style="background-color: rgb(88, 25, 25);">
+    <div class="text-center mb-3">
+        <h2 class="fw-bold text-white">
+            PROYECTO “RINOS EN MOVIMIENTO: RESPONSABILIDAD SOBRE RUEDAS”
+        </h2>
+        <p class="m-0 text-white">Responsabilidad sobre ruedas</p>
+    </div>
+</div>
+<br>
+<p style="font-size: 32px;">  </p>
+
+<div class="row g-5 justify-content-center d-flex align-items-center">
+    <div class="col-md-3">
+        <div class="tarjeta p-2 h-100 shadow" style="text-align: justify;">
+            <h5 class="fw-bold mb-1">Presentación</h5>
+            <p class="small m-0">
+                Este proyecto del CBTis 217 busca que todos aprendamos a 
+                movernos de forma más segura cuando usamos una motocicleta. 
+                Queremos que los estudiantes conozcan los riesgos que existen 
+                y la importancia de cuidarse al conducir. A través de información 
+                clara, iremos viendo temas como protección para manejar, precaución 
+                al manejar y cómo tomar decisiones más seguras todos los días.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="tarjeta p-2 h-100 shadow" style="text-align: justify;">
+            <h5 class="fw-bold mb-1">Objetivo</h5>
+            <p class="small m-0">
+                El objetivo es ayudar a que los alumnos desarrollen hábitos de 
+                manejo responsable. Veremos las normas de tránsito básicas, la importancia de 
+                usar el casco correcto y cómo prevenir accidentes. La idea es que cada estudiante 
+                vea los riesgos más comunes y entienda cómo pequeñas acciones pueden proteger su 
+                vida y la de los demás. Buscamos formar conductores que valoren su seguridad en 
+                cada recorrido.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="tarjeta p-2 h-100 shadow" style="text-align: justify;">
+            <h5 class="fw-bold mb-1">Mensaje</h5>
+            <p class="small m-0">
+                Conducir con cuidado es una forma de cuidarte a ti mismo y también a quienes 
+                te rodean. Usar casco, respetar las señales, estar atento y no confiarse puede 
+                evitar accidentes graves. Cada estudiante del CBTis 217 puede aportar a una 
+                cultura vial más segura, donde todos nos movamos de manera responsable y regresemos 
+                a casa sin riesgos. La precaución no cuesta nada, pero puede salvarlo todo.
+            </p>
+        </div>
+    </div>
+</div>
+
+<p style="font-size: 8px;">  </p>
+<div class="fw-bold text-center mt-3 d-flex justify-content-center align-items-center">
+    <a href="login1.php" class="btn btn-login shadow">Comenzar</a>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

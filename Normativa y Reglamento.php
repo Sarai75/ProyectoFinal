@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,7 +27,7 @@
       <p class="lead">Obligaciones como motociclista para circular seguro y legalmente</p>
     </div>
   </header>
-
+  <?php require_once 'templates/barra.php'; ?>
   <main class="container mt-4">
 
     <h2>Obligaciones básicas</h2>
@@ -120,9 +123,9 @@
 
   </main>
 
+  <?php require_once 'templates/footer.php'; ?>
   <footer>
     <p>CBTIS 217 | Fuente: Reglamento de Tránsito CDMX y Estado de México</p>
   </footer>
-
 </body>
 </html>

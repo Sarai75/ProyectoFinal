@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -48,9 +51,9 @@
     <h1><i class="fas fa-car-side"></i> Prácticas Seguras de Conducción</h1>
     <p>Consejos básicos para manejar de forma responsable</p>
   </header>
+  <?php require_once 'templates/barra.php'; ?>
 
   <div class="container">
-
     <section>
       <h2><i>Principios básicos</i> </h2>
       <ul class="list-group">

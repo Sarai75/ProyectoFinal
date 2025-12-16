@@ -95,6 +95,7 @@ if (isset($_POST["registrar"])) {
         </div>
     </div>
 </div>
+<?php require_once 'templates/footer.php'; ?>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

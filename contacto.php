@@ -1,11 +1,16 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<?php require_once 'templates/barra.php'; ?>
 
 <h2>Formulario de Contacto</h2>
 
@@ -30,6 +35,6 @@
 
     <button type="submit">Enviar</button>
 </form>
-
+<?php require_once 'templates/footer.php'; ?>
 </body>
 </html>

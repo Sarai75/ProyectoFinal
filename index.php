@@ -1,5 +1,6 @@
 <?php
 require_once 'config.php';
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -55,30 +56,6 @@ require_once 'config.php';
             text-align: center;
             border-bottom: 4px solid rgb(184, 197, 187);
             width: 100%;
-        }
-        
-        .footer-full {
-            background-color: #000;
-            color: white;
-            padding: 25px 0;
-            text-align: center;
-            border-top: 3px solid rgb(184, 197, 187);
-            width: 100%;
-            margin-top: auto;
-        }
-        
-        .nav-custom {
-            background-color: #222;
-        }
-        
-        .nav-custom a {
-            color: rgb(184, 197, 187);
-            font-weight: bold;
-        }
-        
-        .nav-custom a:hover {
-            color: white;
-            background-color: #444;
         }
         
         .info-box {
@@ -142,29 +119,7 @@ require_once 'config.php';
         <span class="badge badge-custom">"RINOS EN MOVIMIENTO: REPONSABILIDAD SOBRE RUEDAS”"</span>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
-        <div class="container">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="index.php">Inicio</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#importancia">Importancia</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#certificaciones">Certificaciones</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#encuesta">Encuesta</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="#consejos">Consejos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php require_once 'templates/barra.php'; ?>
 
     <div class="main-content">
         <div class="container mt-4">
@@ -416,14 +371,7 @@ require_once 'config.php';
         </div>
     </div> 
 
-    <div class="footer-full">
-        <div class="container">
-            <h4>"TU CABEZA VALE MÁS QUE CUALQUIER CASCO"</h4>
-            <p><strong>"RINOS EN MOVIMIENTO: RESPONSABILIDAD SOBRE RUEDAS"</strong></p>
-            <p>© 2025 - CBTis 217</p>
-            <small>Proyecto realizado con el fin de hacer concientización sobre seguridad vial</small>
-        </div>
-    </div>
+    <?php require_once 'templates/footer.php'; ?>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     

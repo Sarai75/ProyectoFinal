@@ -144,6 +144,7 @@ $resultado = $conexion->query($sql);
     </div>
     
     <script src="js/bootstrap.bundle.min.js"></script>
+    <?php require_once 'templates/footer.php'; ?>
     <?php $conexion->close(); ?>
 </body>
 </html>

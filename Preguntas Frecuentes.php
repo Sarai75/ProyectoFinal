@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,10 +35,9 @@
             text-shadow: 0 0 8px black;
         }
     </style>
-    
-    
     </head>
     <body>
+    <?php require_once 'templates/barra.php'; ?>
     
         <div id="motoCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -72,6 +74,7 @@
             </button>
         </div>
     
+
     
     <div class="container">
     
@@ -261,8 +264,8 @@
 
     </div>
 </div>
-
-
+<?php require_once 'templates/footer.php'; ?>
 <script src="js/bootstrap.bundle.min.js"> </script>
+
 </body>
 </html>

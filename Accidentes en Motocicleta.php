@@ -1,3 +1,6 @@
+<?php
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,14 +21,14 @@
   </style>
 </head>
 <body>
-
+<?php require_once 'templates/barra.php'; ?>
   <header>
     <h1 class="display-6">Accidentes en Motocicleta</h1>
     <p class="lead">Información nacional sobre causas, estadísticas y riesgos</p>
   </header>
 
   <main class="container mt-4">
-
+  <?php require_once 'templates/barra.php'; ?>
     <br><br>
 
     <section>

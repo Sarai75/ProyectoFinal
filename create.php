@@ -97,11 +97,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS local -->
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script>
-        // Validación de formulario
         (function () {
             'use strict'
             var forms = document.querySelectorAll('.needs-validation')

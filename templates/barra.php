@@ -16,7 +16,7 @@
         width: 100%;
     }
 
-    .header-content {
+    .headercc {
         max-width: 1200px;
         margin: 0 auto;
         padding: 14px 20px;
@@ -64,13 +64,6 @@
         box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
     }
 
-    .nav-menu a.active {
-        background-color: rgba(184, 197, 187, 0.25);
-        border-color: rgb(184, 197, 187);
-        color: #ffffff;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    }
-
     @media (max-width: 900px) {
         .header-content {
             overflow-x: auto;
@@ -83,18 +76,20 @@
 </style>
 
 <header>
-    <div class="header-content">
+    <div class="headercc">
         <nav>
             <ul class="nav-menu">
-                <li><a href="Portada.html">Inicio</a></li>
-                <li><a href="index.php" class="active">Bienvenid@</a></li>
-                <li><a href="Accidentes en Motocicleta.html">Accidentes</a></li>
-                <li><a href="Normativa y Reglamento.html">Normativa</a></li>
-                <li><a href="Practicas Seguras de Conduccion.html">Prácticas Seguras</a></li>
-                <li><a href="Preguntas Frecuentes.html">Preguntas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="ver_encuestas.php">Encuestas</a></li>
+                <li><a href="Portada.php">Inicio</a></li>
+                <li><a href="PracSegurasConduccion.php">Prácticas Seguras</a></li>
+                <li><a href="crudcas.php">Cascos</a></li>
+                <li><a href="Normativa y Reglamento.php">Normativa</a></li>
+                <li><a href="Accidentes en Motocicleta.php">Accidentes</a></li>
+                <li><a href="Preguntas Frecuentes.php">Preguntas</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
                 <li><a href="index.php">Cascos</a></li>
+                <li><a href="ver_encuestas.php">Encuestas</a></li>
+                <li><a href="login1.php">Login</a></li>
+                <li><a href="registro.php">Registro</a></li>
             </ul>
         </nav>
     </div>

@@ -28,7 +28,7 @@
   </header>
 
   <main class="container mt-4">
-  <?php require_once 'templates/barra.php'; ?>
+
     <br><br>
 
     <section>
@@ -100,9 +100,7 @@
 
   </main>
 
-  <footer>
-    <small>CBTIS 217 | Fuentes: INSP, INEGI, OMS, ANMM</small>
-  </footer>
+  <?php require_once 'templates/footer.php'; ?>
   <script src="Js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

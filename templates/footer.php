@@ -1,5 +1,5 @@
 <?php
-// footer.php
+
 ?>
 
 <style>
@@ -62,5 +62,6 @@
         <p><strong>RINOS EN MOVIMIENTO: RESPONSABILIDAD SOBRE RUEDAS</strong></p>
         <p>© 2025 - CBTis 217</p>
         <small>Proyecto realizado con el fin de hacer concientización sobre seguridad vial</small>
+        <small>Fuentes: INSP, INEGI, OMS, ANMM</small>
     </div>
 </footer>

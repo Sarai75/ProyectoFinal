@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prácticas Seguras de Conducción</title>
-
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
@@ -16,7 +16,7 @@
       font-family: Arial, sans-serif;
     }
     header {
-      background: linear-gradient(90deg, rgb(88, 25, 25), rgb(150, 50, 50));
+      background: #581212ff;
       color: white;
       padding: 2rem;
       text-align: center;
@@ -40,18 +40,19 @@
       margin-top: 2rem;
     }
     .icon {
-      color: rgb(150, 50, 50);
+      color: rgba(126, 28, 28, 1);
       margin-right: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1><i class="fas fa-car-side"></i> Prácticas Seguras de Conducción</h1>
     <p>Consejos básicos para manejar de forma responsable</p>
   </header>
+
   <?php require_once 'templates/barra.php'; ?>
+
 
   <div class="container">
     <section>
@@ -165,9 +166,7 @@
 
   </div>
 
-  <footer>
-    <p>© 2025 Conduce Seguro | CBTIS217 </p>
-  </footer>
+      <?php require_once 'templates/footer.php'; ?>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

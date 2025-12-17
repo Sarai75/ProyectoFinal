@@ -107,7 +107,6 @@
     </div>
 
     <h2>Multas y sanciones</h2>
-    <img src="imagenes/multa.webp" class="img-fluid rounded mb-3" alt="Multa motocicleta">
     <ul class="list-group">
       <li class="list-group-item">No usar casco: desde $1,500 MXN y retención de la moto.</li>
       <li class="list-group-item">Circular en banquetas o ciclovías: hasta $2,000 MXN.</li>
@@ -124,8 +123,5 @@
   </main>
 
   <?php require_once 'templates/footer.php'; ?>
-  <footer>
-    <p>CBTIS 217 | Fuente: Reglamento de Tránsito CDMX y Estado de México</p>
-  </footer>
 </body>
 </html>

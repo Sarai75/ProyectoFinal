@@ -1,6 +1,6 @@
 <?php
 require_once 'config.php';
-$sql = "SELECT * FROM encuestas ORDER BY fecha DESC";
+$sql = "SELECT * FROM encuestas ORDER BY id ASC";
 $resultado = $conexion->query($sql);
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ $resultado = $conexion->query($sql);
     <style>
         body {
             background-color: rgb(88, 25, 25);
-            padding: 20px;
+            padding: 0; 
         }
         
         .header {
@@ -59,9 +59,11 @@ $resultado = $conexion->query($sql);
     </style>
 </head>
 <body>
+    <?php require_once 'templates/barra.php'; ?>
+    <br><br>
     <div class="container">
         <div class="header text-center">
-            <h1>📊 Respuestas Guardadas en MySQL</h1>
+            <h1>Respuestas Guardadas en MySQL</h1>
             <p>Base de datos: <strong>proyecto_cascos</strong> | Tabla: <strong>encuestas</strong></p>
         </div>
         
@@ -127,22 +129,13 @@ $resultado = $conexion->query($sql);
             </div>
             <?php endif; ?>
             
-            <div class="mt-4 p-3 bg-light rounded">
-                <h5>🔧 Información técnica:</h5>
-                <p><strong>Servidor MySQL:</strong> <?php echo $conexion->host_info; ?></p>
-                <p><strong>Base de datos:</strong> proyecto_cascos</p>
-                <p><strong>Tabla:</strong> encuestas</p>
-                <p><strong>Total de filas:</strong> <?php echo $resultado->num_rows; ?></p>
-            </div>
         </div>
         
         <div class="mt-3 text-center">
-            <a href="index.php" class="btn btn-dark">Volver al inicio</a>
-            <button onclick="window.print()" class="btn btn-secondary">Imprimir reporte</button>
-            <a href="database.sql" class="btn btn-outline-dark">Ver script SQL</a>
+            <a href="index.php" class="btn btn-dark">Volver a hacer la encuesta</a>
         </div>
     </div>
-    
+    <br><br>
     <script src="js/bootstrap.bundle.min.js"></script>
     <?php require_once 'templates/footer.php'; ?>
     <?php $conexion->close(); ?>

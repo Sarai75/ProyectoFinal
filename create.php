@@ -54,7 +54,6 @@
                                     <div class="invalid-feedback">Selecciona una marca.</div>
                                 </div>
                                 
-                                <!-- Talla -->
                                 <div class="col-md-4">
                                     <label for="talla" class="form-label fw-bold">Talla *</label>
                                     <select class="form-select form-control-custom" 
@@ -68,7 +67,6 @@
                                     </select>
                                 </div>
                                 
-                                <!-- Color -->
                                 <div class="col-md-4">
                                     <label for="color" class="form-label fw-bold">Color</label>
                                     <input type="text" class="form-control form-control-custom" 
@@ -76,28 +74,6 @@
                                            placeholder="Ej: Negro, Rojo/Blanco">
                                 </div>
                                 
-                                <!-- Precio -->
-                                <div class="col-md-4">
-                                    <label for="precio" class="form-label fw-bold">Precio ($) *</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text">$</span>
-                                        <input type="number" class="form-control form-control-custom" 
-                                               id="precio" name="precio" 
-                                               step="0.01" min="0" placeholder="0.00" required>
-                                    </div>
-                                </div>
-                                
-                                <!-- Stock -->
-                                <div class="col-12">
-                                    <label for="stock" class="form-label fw-bold">Stock Inicial</label>
-                                    <input type="number" class="form-control form-control-custom" 
-                                           id="stock" name="stock" 
-                                           min="0" value="0">
-                                    <div class="form-text">Cantidad disponible en inventario.</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Botones -->
                             <div class="mt-4 pt-3 border-top">
                                 <div class="d-flex justify-content-between">
                                     <div>

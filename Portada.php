@@ -257,7 +257,7 @@
 
     <p style="font-size: 8px;">  </p>
     <div class="fw-bold text-center mt-3 d-flex justify-content-center align-items-center">
-        <a href="login1.php" class="btn btn-login shadow">Comenzar</a>
+        <a href="PracSegurasConduccion.php" class="btn btn-login shadow">Comenzar</a>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

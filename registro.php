@@ -54,6 +54,7 @@ if (isset($_POST["registrar"])) {
             background-color: rgb(43, 43, 43);
         }
     </style>
+    <?php require_once 'templates/barra.php'; ?>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -95,6 +96,7 @@ if (isset($_POST["registrar"])) {
         </div>
     </div>
 </div>
+<br><br>
 <?php require_once 'templates/footer.php'; ?>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>

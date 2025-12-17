@@ -22,7 +22,7 @@
         background-color:rgb(43, 43, 43);
     }
 </style>
-
+<?php require_once 'templates/barra.php'; ?>
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-5">
@@ -56,10 +56,9 @@
         </div>
     </div>
     </div>
-
     <?php
     $conexion= mysqli_connect("localhost", "root", "", "usuarios", 3306);
-
+    
     if (isset($_POST["ingresar"])) {
         $usuario= $_POST["usuario"];
         $password= $_POST["password"];
@@ -79,5 +78,7 @@
         }
     }
     ?>
+    <br><br>
+    <?php require_once 'templates/footer.php'; ?>
     </body>
     </html>

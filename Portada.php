@@ -212,7 +212,7 @@
     <section class="mt-5">
         <div class="card">
             <div class="card-body">
-                <h4 class="text-center">MÁS COBRE EL PROYECTO</h4>
+                <h4 class="text-center">MÁS SOBRE EL PROYECTO</h4>
 
                 <div class="row mt-4">
                     <div class="col-md-6">

@@ -1,12 +1,8 @@
 <?php
-// index.php - Listado de cascos
 include 'db.php';
-
-// Obtener todos los cascos
 $sql = "SELECT * FROM cascos ORDER BY id DESC";
 $resultado = $conexion->query($sql);
 
-// Obtener estadísticas
 $stats_sql = "SELECT 
     COUNT(*) as total,
     SUM(stock) as total_stock,
@@ -54,6 +50,7 @@ $stats = $stats_result->fetch_assoc();
     </style>
 </head>
 <body>
+    <?php require_once 'templates/barra.php'; ?>
     <div class="container-fluid py-4" style="background-color: rgb(88, 25, 25);">
         <div class="container">
             <div class="row align-items-center">
@@ -73,7 +70,6 @@ $stats = $stats_result->fetch_assoc();
     </div>
 
     <div class="container mt-4">
-        <!-- Mensajes -->
         <?php if(isset($_GET['success'])): ?>
             <div class="alert alert-success alert-dismissible fade show">
                 <i class="bi bi-check-circle-fill"></i> 
@@ -89,7 +85,7 @@ $stats = $stats_result->fetch_assoc();
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             </div>
         <?php endif; ?>
-        sd
+        
         <div class="card">
             <div class="card-header table-header">
                 <h3 class="mb-0"><i class="bi bi-list-check"></i> Listado de Cascos</h3>
@@ -175,6 +171,8 @@ $stats = $stats_result->fetch_assoc();
             });
         }, 5000);
     </script>
+    <br><br>
+    <?php require_once 'templates/footer.php'; ?>
 </body>
 </html>
 <?php $conexion->close(); ?>
